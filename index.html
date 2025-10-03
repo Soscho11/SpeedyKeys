@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test | Developer Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <h1>Typing Speed Test</h1>
+            <p class="app-description">Improve your typing speed & accuracy with real-time feedback. Have fun while practicing!</p>
+        </header>
+
+        <!-- Controls Section -->
+        <section class="controls">
+            <div class="control-item">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <div class="control-item">
+                <button id="mode-toggle">Dark Mode</button>
+            </div>
+        </section>
+
+        <!-- Typing Area -->
+        <section class="typing-area">
+            <p id="text-to-type" class="text-display"></p>
+            <textarea id="input-text" class="input-box" placeholder="Start typing here..." autofocus></textarea>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Time:</span> <span id="time">0</span>s
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">WPM:</span> <span id="wpm">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Accuracy:</span> <span id="accuracy">100</span>%
+            </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="actions">
+            <button id="reset">Reset</button>
+        </section>
+
+        <!-- Best Scores -->
+        <section class="history">
+            <h2>Best Scores</h2>
+            <p id="best-wpm">Best WPM: 0</p>
+            <p id="best-accuracy">Best Accuracy: 0%</p>
+        </section>
+
+        <footer class="app-footer">
+            <p>Developed By Shahriar Imrose Soscho</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
